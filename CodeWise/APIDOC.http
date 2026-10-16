@@ -1,0 +1,24 @@
+###
+GET http://127.0.0.1:8000/question/
+Accept: application/json
+
+
+#API to add qns
+###
+POST http://127.0.0.1:8000/addquestion/
+Content-Type: application/json
+
+{
+"title": "Calculate Factorial",
+"topic": "Looping",
+"language": "python",
+"difficulty_level": "easy",
+"notes": "Question to calculate factorial",
+"sample_input": "5",
+"sample_output": "120",
+"is_active": true
+}
+
+###
+GET http://127.0.0.1:8000/question/1/
+Accept: application/json
